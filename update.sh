@@ -12,6 +12,8 @@ cp -vr ~/.config/alacritty ./.config/
 cp -vr ~/.config/ranger ./.config/
 cp -vr ~/.config/rofi ./.config/
 cp -vr ~/.config/cantata/ ./.config/
+cp -vr ~/.config/glava/ ./.config/
+cp -vr ~/.config/picom.conf ./.config/
 
 # xdg
 cp -v ~/.config/user-dirs.dirs ./.config/

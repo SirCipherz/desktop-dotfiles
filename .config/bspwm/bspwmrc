@@ -23,6 +23,14 @@ bspc rule -a Zathura state=tiled
 bspc config focused_border_color "#98b6d0"
 bspc config normal_border_color "#373a43"
 
+# compositor
+killall picom
+picom &
+
+# music visualiser
+killall glava
+glava --desktop &"
+
 # Shortkeys
 killall sxhkd
 sxhkd &
@@ -54,4 +62,3 @@ dunst -config $HOME/.config/dunst/dunstrc
 for bar in $(xdo id -N Polybar); do
     xdo below -t $(xdo id -n root) $bar
 done
-
