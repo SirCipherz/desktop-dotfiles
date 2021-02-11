@@ -1,0 +1,21 @@
+[module/mpd]
+type = internal/mpd
+
+host = 127.0.0.1
+port = 6600
+
+interval = 1
+
+icon-play = 
+icon-pause = 
+icon-stop = 
+icon-prev = 
+icon-next = 
+
+label-song =   %artist% - %title%
+format-online = <label-song>  <icon-prev>  <toggle>  <icon-next>
+
+format-online-background = ${colors.background}
+format-online-foreground = ${colors.alt-foreground}
+
+; vim:ft=dosini

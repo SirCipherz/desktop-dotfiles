@@ -1,0 +1,36 @@
+;modules
+include-file = $HOME/.config/polybar/modules/bspwm
+include-file = $HOME/.config/polybar/modules/date
+include-file = $HOME/.config/polybar/modules/battery
+include-file = $HOME/.config/polybar/modules/wifi
+include-file = $HOME/.config/polybar/modules/alsa
+include-file = $HOME/.config/polybar/modules/xwindow
+include-file = $HOME/.config/polybar/modules/round
+include-file = $HOME/.config/polybar/modules/mpd
+
+;colors
+include-file = $HOME/.config/polybar/colors
+
+;fonts
+include-file = $HOME/.config/polybar/fonts
+
+;bars
+include-file = $HOME/.config/polybar/bars/center
+include-file = $HOME/.config/polybar/bars/left
+include-file = $HOME/.config/polybar/bars/right
+
+[global/wm]
+margin-bottom = 0
+margin-top = 0
+
+[settings]
+label-focused-underline= ${colors.background}
+
+throttle-output = 5
+throttle-output-for = 10
+
+throttle-input-for = 30label-focused-underline= ${colors.red}
+screenchange-reload = true
+pseudo-transparency = true
+
+; vim:ft=dosini

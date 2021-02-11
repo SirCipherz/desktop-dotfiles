@@ -1,0 +1,25 @@
+[bar/left]
+include-file = $HOME/.config/polybar/fonts
+monitor = DisplayPort-0
+override-redirect = false
+bottom = false
+fixed-center = true
+width = 100%
+height = 25
+background = ${colors.trans}
+foreground = ${colors.foreground}
+line-size = 0
+line-color = #f00
+
+offset-x = 3
+offset-y = 3
+padding = 3
+
+module-margin = 0
+
+modules-center = round-left bspwm round-right
+
+spacing = 0
+dim-value = 1.0
+
+; vim:ft=dosini

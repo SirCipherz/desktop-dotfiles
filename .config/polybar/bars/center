@@ -1,0 +1,35 @@
+[bar/center]
+include-file = $HOME/.config/polybar/fonts
+monitor = HDMI-A-0
+override-redirect = false
+bottom = false
+fixed-center = true
+width = 100%
+height = 26
+background = ${colors.trans}
+foreground = ${colors.foreground}
+line-size = 0
+line-color = #f00
+
+offset-x = 3
+offset-y = 3
+padding = 3
+
+module-margin = 0
+
+modules-right = round-left date round-right
+modules-center = round-left bspwm round-right
+modules-left = round-left mpd round-right
+
+spacing = 0
+dim-value = 1.0
+
+tray-position = none
+tray-maxsize = 6
+tray-background = ${colors.trans}
+tray-offset-x = 3
+tray-offset-y = 3
+tray-padding = 3
+tray-detached = false
+
+; vim:ft=dosini

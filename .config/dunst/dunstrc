@@ -1,0 +1,38 @@
+[global]
+    monitor = 1
+    geometry = "500x100-20+48"
+    padding = 16
+    horizontal_padding = 16
+
+    font = Source Code Pro 12
+    format = "<b>%s</b>\n%b"
+    markup = full
+
+    alignment = left
+    icon_position = left
+    corner_radius = 0
+
+[urgency_low]
+    timeout = 2
+    background = "#1E2021"
+    foreground = "#FCFCFC"
+
+[urgency_normal]
+    timeout = 4 
+    background = "#1E2021"
+    foreground = "#FCFCFC"
+
+[urgency_critical]
+    timeout = 0
+    background = "#1E2021"
+    foreground = "#FCFCFC"
+
+[shortcuts]
+    close = ctrl+space
+    close_all = ctrl+shift+space
+
+[ignore]
+    appname = Brave
+    format = ""
+
+# vim: ft=cfg

@@ -1,0 +1,62 @@
+window:
+  padding:
+    x: 1
+    y: 1
+  title: Alacritty
+  class:
+    instance: Alacritty
+    general: Alacritty
+
+font:
+  normal:
+    family: monospace
+    style: Regular
+  bold:
+    family: monospace
+    style: Bold
+  italic:
+    family: monospace
+    style: Italic
+  bold_italic:
+    family: monospace
+    style: Bold Italic
+
+  size: 10
+
+colors:
+  primary:
+    background: '#2e3436'
+    foreground: '#c5c8c6'
+
+  normal:
+    red: '#f2201f'
+    green: '#23fd00'
+    yellow: '#fffd00'
+    blue: '#1a8fff'
+    magenta: '#fd28ff'
+    cyan: '#14ffff'
+    white: '#ffffff'
+    black: '#767676'
+
+  bright:
+    red: '#cc0403'
+    green: '#19cb00'
+    yellow: '#cecb00'
+    blue: '#0d73cc'
+    magenta: '#cb1ed1'
+    cyan: '#0dcdcd'
+    white: '#dddddd'
+    black: '#000000'
+
+scrolling:
+  history: 9999
+
+cursor:
+  style:
+    shape: Block
+
+mouse:
+  url:
+    launcher:
+      program: xdg-open
+      args: []

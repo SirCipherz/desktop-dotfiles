@@ -1,0 +1,9 @@
+configuration {
+    show-icons: true;
+    icon-theme: "Tela-circle-dark";
+    font: "Source Code Pro 14";
+    location: 7;
+    width: 27;
+    lines: 20;
+}
+@import "/usr/share/rofi/themes/Arc-Dark.rasi"
