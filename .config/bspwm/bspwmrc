@@ -27,10 +27,6 @@ bspc config normal_border_color "#373a43"
 killall picom
 picom &
 
-# music visualiser
-killall glava
-glava --desktop &"
-
 # Shortkeys
 killall sxhkd
 sxhkd &
@@ -56,9 +52,13 @@ start-pulseaudio-x11
 
 # Start dunst
 killall dunst
-dunst -config $HOME/.config/dunst/dunstrc
+dunst -config $HOME/.config/dunst/dunstrc &
 
 # putting the bars under everything
 for bar in $(xdo id -N Polybar); do
     xdo below -t $(xdo id -n root) $bar
 done
+
+# redshift
+killall redshift
+redshift -P -l 47:6 &
