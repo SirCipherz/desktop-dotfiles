@@ -1,0 +1,10 @@
+#!/bin/sh
+# heavily inspired by luke smith's script
+
+emoji=$(cut -d ';' -f1 $HOME/.local/share/emoji | rofi -dmenu -font "Noto Color Emoji 18" -location 0 -columns 2 -lines 4 -hide-scrollbar -disable-history -width 75 | sed 's/ .*//')
+
+# exit if none chosen
+[ -z "$emoji" ] && exit
+
+echo -n $emoji | xclip -se clip
+notify-send "$emoji copied to clipboard." &

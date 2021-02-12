@@ -50,6 +50,10 @@ super + Tab
 super + shift + Tab
       bspc node -f prev.local
 
+# rotate node
+super + r
+    bspc node @parent -R 90
+
 # screenshot
 Print
       flameshot gui
@@ -73,3 +77,7 @@ super + p
 # powermenu
 super + shift + p
     $HOME/.config/rofi/powermenu.sh
+
+# emoji menu
+super + e
+    cat $HOME/.local/share/emoji | rofi -dmenu -font "Noto Color Emoji 18" -location 0 -columns 2 -lines 4 -hide-scrollbar -disable-history -width 75 | sed 's/ .*//' | tr -d '\n' | xclip -selection clipboard
