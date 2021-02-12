@@ -6,27 +6,34 @@ fpath=(/usr/share/zsh/site-functions $fpath)
 
 source $ZSH/oh-my-zsh.sh
 
-alias rsync="rsync --progress"
+# rewrites
+alias cat='bat'
+alias du='dust -b'
+alias ps='procs'
+alias find='fd'
+
+# adding arguments by default
+alias rsync="rsync --info=progress2 -rzP"
 alias ls='lsd -lh --color=auto'
 alias wget='wget -c'
 alias reboot='sudo reboot'
-alias du='du -h'
 alias df='df -h'
-alias cpb='rsync --info=progress2'
 alias mv='mv -vi'
 alias cp='cp -vir'
 alias rm='rm -vir'
 alias mkdir='mkdir -pv'
+alias emacs='emacs -nw'
+alias grep="grep --color=auto -nH"
 
-alias lsl="ls -t --date relative"
-alias lst="ls --tree"
-alias lsa="ls -A"
-
+# time savers
+alias lsl="lsd -lth --color=auto --date relative --reverse"
+alias lst="lsd -lth --color=auto --tree"
+alias lsa="lsd -Alth --color=auto"
 alias dev="devour"
-alias emacs="emacsclient"
-
-export PATH=$PATH:~/.local/bin
 
 pathnfile (){
     echo "`pwd`/$@"
 }
+
+export PATH=$PATH:~/.local/bin
+export EDITOR='vim'
