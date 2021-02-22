@@ -13,7 +13,7 @@ icon-prev = 
 icon-next = 
 
 label-song =   %artist% - %title%
-format-online = <label-song>  <icon-prev>  <toggle>  <icon-next>
+format-online = "<label-song> "
 
 format-online-background = ${colors.background}
 format-online-foreground = ${colors.alt-foreground}
