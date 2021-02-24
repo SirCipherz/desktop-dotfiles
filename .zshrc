@@ -10,7 +10,6 @@ source $ZSH/oh-my-zsh.sh
 alias cat='bat'
 alias du='dust -b'
 alias ps='procs'
-alias find='fd'
 
 # adding arguments by default
 alias rsync="rsync --info=progress2 -rzP"
