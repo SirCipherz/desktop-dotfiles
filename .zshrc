@@ -29,6 +29,8 @@ alias lsl="lsd -lth --color=auto --date relative --reverse"
 alias lst="lsd -lth --color=auto --tree"
 alias lsa="lsd -Alth --color=auto"
 alias dev="devour"
+alias poweroff="sudo poweroff"
+alias reboot="sudo reboot"
 
 pathnfile (){
     echo "`pwd`/$@"
