@@ -31,9 +31,14 @@ alias lsa="lsd -Alth --color=auto"
 alias dev="devour"
 alias poweroff="sudo poweroff"
 alias reboot="sudo reboot"
+alias ytdl="youtube-dl -f best -o './%(title)s.%(ext)s'"
 
 pathnfile (){
     echo "`pwd`/$@"
+}
+
+webm() {
+    ffmpeg -i $1 -vcodec libvpx-vp9 -b:v 1M -acodec libvorbis $2.webm
 }
 
 export PATH=$PATH:~/.local/bin
