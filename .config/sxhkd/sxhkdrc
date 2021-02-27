@@ -64,11 +64,23 @@ super + l
 
 # play/pause song
 XF86AudioPlay
-    $HOME/.local/bin/mpc_toggle
+    mpc toggle 
 
 # next/prev song
 XF86Audio{Prev,Next}
-    mpc -q {prev,next}
+    mpc -q {prev,next} && dunstify "Now Playing :" "$(mpc --format '%title% - %artist%' current)"
+
+# stop song
+XF86AudioStop
+    mpc stop
+
+# raise volume
+XF86AudioRaiseVolume
+    ponymix increase 5 && dunstify "Volume: " -h int:value:"`ponymix get-volume`"
+
+# lower volume
+XF86AudioLowerVolume
+    ponymix decrease 5 && dunstify "Volume: " -h int:value:"`ponymix get-volume`"
 
 # rofi-pass
 super + p
