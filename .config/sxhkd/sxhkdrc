@@ -48,7 +48,7 @@ super + Tab
 
 # focus to the next window
 super + shift + Tab
-      bspc node -f prev.local
+    bspc node -f prev.local
 
 # rotate node
 super + r
@@ -56,7 +56,7 @@ super + r
 
 # screenshot
 Print
-      flameshot gui
+    flameshot gui
 
 # lock
 super + l
@@ -68,7 +68,7 @@ XF86AudioPlay
 
 # next/prev song
 XF86Audio{Prev,Next}
-	mpc -q {prev,next}
+    mpc -q {prev,next}
 
 # rofi-pass
 super + p
