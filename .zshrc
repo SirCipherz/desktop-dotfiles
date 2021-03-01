@@ -32,6 +32,7 @@ alias dev="devour"
 alias poweroff="sudo poweroff"
 alias reboot="sudo reboot"
 alias ytdl="youtube-dl -f best -o './%(title)s.%(ext)s'"
+alias dlsong="youtube-dl -x --audio-format mp3 -f bestaudio -o './%(title)s.%(ext)s'"
 
 pathnfile (){
     echo "`pwd`/$@"
