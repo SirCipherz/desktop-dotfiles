@@ -1,5 +1,9 @@
 export ZSH="/home/leo/.oh-my-zsh"
 
+if [[ "$(tty)" == "/dev/tty1" ]]; then
+    startx
+fi
+
 ZSH_THEME="gentoo"
 plugins=(git zsh-completions)
 fpath=(/usr/share/zsh/site-functions $fpath)
