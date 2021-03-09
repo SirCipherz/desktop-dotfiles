@@ -3,8 +3,8 @@ env:
 
 window:
   padding:
-    x: 1
-    y: 1
+    x: 2
+    y: 5
   title: Alacritty
   class:
     instance: Alacritty
