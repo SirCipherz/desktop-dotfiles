@@ -44,14 +44,17 @@ pathnfile (){
 
 webm() {
     ffmpeg -i "$1" -vcodec libvpx-vp9 -b:v 1M -acodec libvorbis "$2.webm"
+    dunstify "Media encoder" "Conversion of \"$1\" is finished" -u critical
 }
 
 toh265() {
     ffmpeg -hwaccel vaapi -i "$1" -c:v libx265 -crf 26 "$2.mp4"
+    dunstify "Media encoder" "Conversion of \"$1\" is finished" -u critical
 }
 
 tovp9(){
     ffmpeg -i "$1" -c:v libvpx-vp9 -b:v 128K "$2.mp4"
+    dunstify "Media encoder" "Conversion of \"$1\" is finished" -u critical
 }
 
 export PATH=$PATH:~/.local/bin
