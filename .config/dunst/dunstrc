@@ -24,7 +24,7 @@
 
 [urgency_critical]
     timeout = 0
-    background = "#1E2021"
+    background = "#731D1E"
     foreground = "#FCFCFC"
 
 [shortcuts]
