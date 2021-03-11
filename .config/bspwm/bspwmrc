@@ -62,3 +62,6 @@ done
 # redshift
 killall redshift
 redshift -P -l 47:6 &
+
+# numlock
+numlockx on
