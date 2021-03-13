@@ -21,7 +21,10 @@ bspc rule -a Zathura state=tiled
 
 # Boder's colors
 bspc config focused_border_color "#98b6d0"
-bspc config normal_border_color "#373a43"
+bspc config normal_border_color "#2e3436"
+
+# rounded corners
+bspc config border_radius 24
 
 # compositor
 killall picom
