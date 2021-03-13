@@ -5,8 +5,11 @@ if [[ "$(tty)" == "/dev/tty1" ]]; then
 fi
 
 ZSH_THEME="gentoo"
-plugins=(git zsh-completions)
+plugins=(git zsh-completions zsh-syntax-highlighting zsh-autosuggestions)
 fpath=(/usr/share/zsh/site-functions $fpath)
+
+ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE="fg=#707370"
+ZSH_AUTOSUGGEST_STRATEGY=(history completion)
 
 source $ZSH/oh-my-zsh.sh
 
