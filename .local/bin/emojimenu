@@ -7,4 +7,4 @@ emoji=$(cut -d ';' -f1 $HOME/.local/share/emoji | rofi -dmenu -font "Noto Color 
 [ -z "$emoji" ] && exit
 
 echo -n $emoji | xclip -se clip
-notify-send "$emoji copied to clipboard." &
+dunstify "$emoji copied to clipboard."
