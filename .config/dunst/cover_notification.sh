@@ -3,8 +3,10 @@
 # get path
 path=$(dirname $HOME/music/"$(mpc --format='%file%' current)")
 
-test -f "$path/cover.png" && cover="$path/cover.png"
-test -f "$path/cover.jpg" && cover="$path/cover.jpg"
+test -f "$path/cover.png"  && cover="$path/cover.png"
+test -f "$path/cover.jpg"  && cover="$path/cover.jpg"
+test -f "$path/folder.png" && cover="$path/folder.png"
+test -f "$path/folder.jpg" && cover="$path/folder.jpg"
 
 echo "$cover"
 echo "$1"
