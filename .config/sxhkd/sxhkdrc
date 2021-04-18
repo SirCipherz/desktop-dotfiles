@@ -68,7 +68,7 @@ XF86AudioPlay
 
 # next/prev song
 XF86Audio{Prev,Next}
-    mpc -q {prev,next} && $HOME/.config/dunst/cover_notification.sh "Now Playing :"
+    mpc -q {prev,next} && $HOME/.config/dunst/cover_notification.sh "Now Playing"
 
 # stop song
 XF86AudioStop
